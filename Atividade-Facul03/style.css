@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e5e5e5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container principal */
+.container{
+    width: 95%;
+    max-width: 1200px;
+
+    background-color: #dddddd;
+
+    border-radius: 10px;
+
+    padding: 35px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Linhas */
+.linha{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom: 35px;
+
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.card{
+    background-color: #eeeeee;
+
+    border: 2px solid #777;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+/* Hover opcional */
+.card:hover{
+    transform: scale(1.03);
+}
+
+/* Cards pequenos */
+.pequeno{
+    width: 250px;
+    height: 310px;
+}
+
+/* Cards grandes */
+.grande{
+    width: 350px;
+    height: 400px;
+}
+
+/* Imagens pequenas */
+.pequeno img{
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+}
+
+/* Imagens grandes */
+.grande img{
+    width: 290px;
+    height: 290px;
+
+    object-fit: contain;
+}
+
+/* Títulos */
+.card h2{
+    margin-top: 15px;
+
+    font-size: 22px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #00111f, #000000);
+    position: relative;
+}
+
+/* Foguete */
+.foguete{
+    width: 120px;
+    position: absolute;
+
+    animation: voar 8s ease-in-out infinite;
+}
+
+/* Animação */
+@keyframes voar {
+
+    /* Começa no topo esquerdo */
+    0%{
+        top: 0;
+        left: 0;
+
+        transform: rotate(75deg);
+    }
+
+    /* Vai até o canto inferior direito */
+    45%{
+        top: calc(100% - 120px);
+        left: calc(100% - 120px);
+
+        transform: rotate(75deg);
+    }
+
+    /* Gira para voltar */
+    50%{
+        top: calc(100% - 120px);
+        left: calc(100% - 120px);
+
+        transform: rotate(-110deg);
+    }
+
+    /* Volta ao topo esquerdo */
+    95%{
+        top: 0;
+        left: 0;
+
+        transform: rotate(-110deg);
+    }
+
+    /* Pequena pausa antes de repetir */
+    100%{
+        top: 0;
+        left: 0;
+
+        transform: rotate(75deg);
+    }
+}
